@@ -1,0 +1,161 @@
+    1  bash Downloads/Anaconda3-2024.10-1-Linux-x86_64.sh 
+    2  jupyter notebook
+    3  sudo apt install git
+    4  git --versio
+    5  git --version
+    6  pwd
+    7  ls
+    8  ls -l
+    9  ls #-l
+   10  ls -lh
+   11  cd
+   12  cd Desktop
+   13  pwd
+   14  man
+   15  ls
+   16  man
+   17  man ls
+   18  cd Desktop
+   19  cd ..
+   20  cd -
+   21  cd
+   22  ls
+   23  cd Desktop/
+   24  cd Desktop/shell-lesson/
+   25  cd 
+   26  cd Desktop/shell-lesson/
+   27  pwd
+   28  ls -a
+   29  pwd
+   30  ls -l
+   31  ls -a
+   32  cd ..
+   33  pwd
+   34  ls -l
+   35  cd shell-lesson/
+   36  mkdir firstdir
+   37  pwd
+   38  ls
+   39  ls firstdir/
+   40  ls -a
+   41  cat
+   42  cat 829-0.txt
+   43  head -n 1 829-0.txt
+   44  less 829.0.txt
+   45  less 829-0.txt
+   46  head 829-0.txt 33504-0.txt
+   47  head *.txt
+   48  mv 829-0.txt gulliver.txt
+   49  ls
+   50  cp gulliver.txt gulliver-backup.txt
+   51  ls
+   52  mv gulliver.txt firstdir/
+   53  ls
+   54  mv firstdir backup
+   55  mv gulliver-backup.txt backup
+   56  ls
+   57  mv backup/gulliver.txt .
+   58  ls
+   59  rm gulliver.txt
+   60  ls
+   61  rm -r first/ dir/
+   62  rm -r firstdir/
+   63  rm -i *tsv
+   64  echo "Mein Name ist Letitia"
+   65  echo "Mein Name ist $NAME"
+   66  touch a.txt b.txt c.txt
+   67  ls
+   68  for FILE in a.txt b.txt c.txt; do echo $FILE; cp "$FILE" backup_ "$FILE"; done
+   69  for FILE in a.txt b.txt c.txt; do echo $FILE; cp "$FILE" backup_"$FILE"; done
+   70  ls
+   71  for FILE in *txt; do echo $FILE; done
+   72  ls -l
+   73  pwd
+   74  for FILE in *txt; do head -n 1; tail ; echo $FILE; done
+   75  for FILE in *txt; do  echo $FILE; head - n 1 $FILE; tail - n 1 $FILE; done
+   76  for FILE in *txt; do  echo $FILE; head -n 1 $FILE; tail  n 1 $FILE; done
+   77  for FILE in *txt; do  echo $FILE; head -n 1 $FILE; tail -n 1 $FILE; done
+   78  history
+   79  echo "Mein Name ist Letitia"
+   80  history
+   81  history > history.txt
+   82  ls
+   83  nano mein_bash_skript.sh
+   84  cat mein_bash_skript.sh 
+   85  bash mein_bash_skript.sh 
+   86  history
+   87  history > history.txt
+   88  pwd
+   89  cd
+   90  git config --global user.name "Letitia Moelck"
+   91  git config --global user.email "l.moelck@dnb.de"
+   92  cat .gitconfig
+   93  git config --list
+   94  git help config
+   95  mkdir planets
+   96  cd planets
+   97  git init
+   98  ls -a
+   99  git status
+  100  git checkout -b main
+  101  git status
+  102  touch mars.txt
+  103  ls
+  104  nano mars.txt
+  105  git status
+  106  git add mars.txt
+  107  git status
+  108  git commit -m "Start note on Mars as a base"
+  109  git log
+  110  git status
+  111  nano mars.txt
+  112  git status
+  113  git diff
+  114  git add mars.txt  # aenderung auf stage area
+  115  git status 
+  116  git commit -m "Add concerns about effect of Mars' moons on Wolfman" # aenderung committen
+  117  git log
+  118  nano mars.txt
+  119  git add mars.txt
+  120  git diff --staged
+  121  git commit -m "Discuss concerns about Mars' climate for Mummy"
+  122  git log # zeigt die Historie
+  123  git log --oneline  # zeigt die Historie kurz Form
+  124  nano mars.txt
+  125  git diff HEAD mars.txt 
+  126  git diff HEAD~1 mars.txt # working directory mit der vorletzen Version vergleichen
+  127  git diff HEAD~2 mars.txt
+  128  git show HEAD~2 # commit ID erhalten
+  129  git diff 964de2a1b66465 marx.txt
+  130  git diff 964de2a1b66465 mars.txt
+  131  git status # infos zu den letzten aenderungen
+  132  git checkout HEAD mars.txt # datei wird in working directory geändert
+  133  git restore mars.txt  # macht das gleiche wie checkout HEAD
+  134  git checkout HEAD~2 mars.txt # alte Version einer Ddatei wird in working directory hergestellt
+  135  git status
+  136  git diff --staged  # zeigt die aenderungen an datei
+  137  git help restore
+  138  git restore -s HEAD mars.txt
+  139  cat mars.txt
+  140  nano mars.txt
+  141  git restore  mars.txt
+  142  git diff
+  143  cat mars.tx
+  144  cat mars.txt
+  145  mkdir results
+  146  touch a.dat b.dat c.dat results/a.out results/b.out
+  147  git status
+  148  touch .gitignore
+  149  nano .gitignore
+  150  git status
+  151  git add -gitignore
+  152  git add .gitignore
+  153  git status
+  154  git add .gitignore
+  155  git commit -m "Ignore data files and the results"
+  156  git status --ignore
+  157  git add a.dat
+  158  history
+  159  history > history.txt
+  160  history
+  161  history > history.txt
