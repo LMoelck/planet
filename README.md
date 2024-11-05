@@ -1,6 +1,6 @@
 # Planet description
 
-In the repo we are exploring different planets.
+In the repo we are exploring different planet.
 
 
 ## Contact
